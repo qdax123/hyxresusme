@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://qdax123.github.io/qd2002/bhy.png" type="image/x-icon">
+    <script src="../js/canvas-particle.js"></script>
+    <title>校园工作经历</title>
+    <style>
+        body {
+            background-color: #2D2D2D
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header {
+            color: aliceblue;
+            background-color: black;
+            opacity: 0.5;
+            width: 100%;
+            line-height: 50px;
+            margin: 0 auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        .neirong {
+            color: antiquewhite;
+        }
+
+        #dibu {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            color: azure;
+            text-align: center;
+            background-color: black;
+        }
+
+        #you {
+            width: 40%;
+            float: right;
+            position: fixed;
+            left: 60%;
+            top: 20%;
+        }
+
+        .bj {
+            background-color: black;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body id="mydiv">
+    <header>
+        <h1>校园经历</h1>
+    </header>
+    <br>
+    <div class="neirong">
+        <div>
+            <br><br>
+            <h1>九江职业技术学院
+                <br>
+                素质拓展管理委员会
+            </h1>
+            <p class="bj">
+                负责大学生质量发展计划的具体实施。根据学生的个人特点、爱好和能力，对他们将来可能从事的职业进行设计指导。并对学生提高自身素质的具体方法和途径提出合理化建议，帮助学生确立人才目标，引导他们自觉、有选择地参与各项质量发展活动。
+            </p>
+        </div>
+    </div>
+    <div class="neirong">
+        <div>
+            <br><br>
+            <h1>九江职业技术学院
+                <br>
+                学生冯特心理社
+                社长
+            </h1>
+            <p class="bj">
+                探索同学们生活中遇到的一切与心理有关的问题，积极宣传心理健康教育知识，以自助、互助、他助等形式帮助同学们面对成长的烦恼。帮助同学们了解、认识自我，处理好人际关系，调整好心理状态，成为朝气蓬勃、健康乐群的学子。
+            </p>
+        </div>
+    </div>
+    <div class="neirong">
+        <div>
+            <br><br>
+            <h1>九江职业技术学院
+                <br>
+                前端2002班
+                班长
+            </h1>
+            <p class="bj">
+                1、根据辅导员或者任课老师的指示，将考试，活动等相关的信息通过各种通讯途径（如QQ，微信等）传达给同学们；
+                <br>2、制定任期内工作计划，按照计划协调各班委工作，并定期召开班委会总结班级工作；
+                <br>3、与班里其他的班委一道，组织班级活动并调动同学们的活动积极性；
+                <br>4、协调同学之间的关系，矛盾发生时予以有理有据的劝说；处理同学们因学院的某些决定而产生的不满情绪，晓之以理，动之以情。
+                <br>5、阅读班里同学的基本资料，了解同学们的需求，向更上级任职者传达。管理状态：听从辅导员，任课老师以及上级领导的指示，除非遇到特殊问题外，要求与其他班委和谐合作，共同努力。
+            </p>
+        </div>
+    </div>
+    <div class="neirong">
+        <div>
+            <br><br>
+            <h1>九江职业技术学院
+                <br>
+                招生就业处
+                招生就业工作人员
+            </h1>
+            <p class="bj">
+                收集和整理招生、就业、培训工作的文书及档案资料，完成每年招生、就业、培训工作的总结和有关数据的统计和分析相。
+                负责加强招生、就业工作对外业务联系和信息交流，拓宽校政合作、校校合作、校企合作办学；加强招生、就业信息网的建设和维护，组织、收集、整理并及时在部门网站、QQ群、微信公众号上发布信息资料；负责组织、举办各类专场及大型招聘会。
+                配合相关部门做好新生迎新工作、新生入学资格复审工作；及时办理和发放报到证、就业推荐表、就业协议书，办理毕业生就业手续，及时准确地做好毕业生安全离校工作
+            </p>
+        </div>
+    </div>
+    <div id="dibu">
+        @何永轩介绍完毕
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            //配置
+            var config = {
+                vx: 4,	//小球x轴速度,正为右，负为左
+                vy: 4,	//小球y轴速度
+                height: 2,	//小球高宽，其实为正方形，所以不宜太大
+                width: 2,
+                count: 200,		//点个数
+                color: "121, 162, 185", 	//点颜色
+                stroke: "130,255,255", 		//线条颜色
+                dist: 6000, 	//点吸附距离
+                e_dist: 20000, 	//鼠标吸附加速距离
+                max_conn: 10 	//点到点最大连接数
+            }
+
+            //调用
+            CanvasParticle(config);
+        }
+    </script>
+    <script type="text/javascript" src="js/canvas-particle.js"></script>
+</body>
+
+</html>
